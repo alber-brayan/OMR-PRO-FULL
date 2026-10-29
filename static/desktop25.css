@@ -1,0 +1,96 @@
+/* Identidad Pro del frontend anterior, adaptada al flujo OMR 2.5 para PC. */
+:root {
+  --bg:#070b17; --surface:#101a2b; --surface-raised:#17263b;
+  --border:#2b3b53; --text:#f2f6fc; --muted:#a7b5ca;
+  --accent:#5eead4; --accent-ink:#062a27; --warning:#f4cc7e;
+  --success:#5eead4; --danger:#fda4af; --radius:14px;
+}
+html {scroll-padding-top:24px}
+body {min-width:1200px; padding:24px 32px; font-size:15px; overflow-x:auto}
+main {width:100%; max-width:1540px; padding:0; margin:0 auto}
+.app-header {max-width:1540px; margin:0 auto 22px; padding:0 0 18px; border-color:var(--border)}
+.brand-mark {border-radius:10px; background:#102a31; border-color:#28565a; font-size:20px}
+.brand small {font-family:Consolas,monospace; font-size:12px; letter-spacing:.06em}
+.course-label select {min-width:180px; background:#0c1525; border-radius:9px}
+.app-hero {min-height:235px; padding:28px 36px; border-radius:20px; grid-template-columns:minmax(0,1fr) 300px; margin-bottom:20px; gap:20px}
+.app-hero h1 {font-size:52px; line-height:1; letter-spacing:-.04em}
+.app-hero p {margin-top:13px; font-size:14px; max-width:680px}
+.hero-eyebrow {margin-bottom:15px}
+.hero-metrics {margin-top:15px; gap:8px}
+.hero-metrics span {padding:6px 9px; font-size:11px}
+.hero-actions {display:flex; gap:18px; align-items:center; margin-top:20px}
+.hero-actions>span {color:var(--text-muted); font-size:12px}
+.scanner-stage {transform:scale(.82); height:220px}
+.summary {border:1px solid var(--border); padding:18px 24px; border-radius:14px; background:#0f1829cc; margin-bottom:20px}
+.summary span {font-size:29px; color:var(--text); font-variant-numeric:tabular-nums}
+.summary>div:first-child span {color:var(--accent)}
+.summary>div:nth-child(2) span {color:var(--warning)}
+.tabs {display:grid; grid-template-columns:repeat(5,1fr); gap:7px; padding:7px; background:#0c1424; border:1px solid var(--border); border-radius:13px; margin-bottom:22px; overflow:visible}
+.tabs button {display:flex; justify-content:center; align-items:center; gap:12px; padding:13px; border:1px solid transparent; border-radius:8px; color:var(--muted); font-weight:600}
+.tabs button.active {background:linear-gradient(110deg,#153d42,#142d45); border-color:#2d6668; color:#a0f5e7}
+.tabs .tab-number {background:none; padding:0; margin:0; color:#6f839f; font-family:Consolas,monospace; font-size:12px}
+.tabs .active .tab-number {color:var(--accent)}
+.tab-panel {background:#0f1829eb; border:1px solid var(--border); border-radius:18px; padding:26px}
+h2 {font-size:23px; color:#d4fff7}
+.section-heading {margin-bottom:22px}
+.format-chip {border-radius:7px; background:#0a1220}
+.button {border-radius:9px; background:linear-gradient(110deg,#5eead4,#38bdf8); color:#062a27; border:0; padding:11px 17px}
+.button.secondary {border:1px solid #405775; background:#132137; color:#e1eaf7}
+.button:hover:not(:disabled) {filter:brightness(1.12)}
+.upload-layout {grid-template-columns:minmax(0,1fr) 310px; gap:28px}
+.dropzone {min-height:240px; border:1px dashed #466786; background:#0a1323; border-radius:14px}
+.dropzone.dragover {background:#12313b; border:1px solid var(--accent)}
+.dropzone strong {font-size:21px}
+.upload-symbol {width:44px; height:44px; display:grid; place-items:center; background:#12343c; border-radius:12px; font-size:28px}
+.capture-guide {border:1px solid #293b53; background:#0c1525; border-radius:12px; padding:22px}
+.capture-guide h3 {font-size:19px; margin:10px 0 18px}
+.capture-guide li {margin-bottom:12px}
+.source-actions {display:flex; align-items:center; gap:12px; margin-top:16px}
+.source-actions label {font-size:13px}
+#file-count {margin:14px 0; font-size:13px}
+.queue-panel {margin:12px 0 20px; border:1px solid var(--border); border-radius:8px; padding:10px 14px; font-size:13px}
+.queue-panel summary {cursor:pointer; color:var(--accent)}
+.queue-panel ol {max-height:170px; overflow:auto; margin:12px 0 0; padding-left:25px}
+.queue-panel li {padding:4px 8px; color:var(--muted); overflow-wrap:anywhere}
+.queue-panel li[data-status=error] {color:var(--danger)}
+.queue-panel li[data-status=done] {color:var(--success)}
+.queue-panel li[data-status=reading] {color:var(--warning)}
+.callout {border-radius:0 8px 8px 0; background:#30291c; color:#fae3b5}
+.callout.success {background:#12322e}
+input,select {border-color:#405775; background:#091322; border-radius:8px}
+.review-layout {grid-template-columns:200px minmax(0,1fr); gap:20px}
+.review-content {display:grid; grid-template-columns:minmax(0,1.15fr) minmax(360px,.85fr); gap:22px; align-items:start}
+.review-image {position:sticky; top:20px; background:#e8edf0}
+.image-toolbar {flex-wrap:wrap; gap:8px}
+.image-toolbar>div {flex-wrap:wrap; gap:12px; flex-shrink:1}
+.review-content .answer-grid {grid-template-columns:repeat(5,minmax(0,1fr)); gap:7px; margin-bottom:18px}
+.review-content .form-grid {gap:14px}
+.review-content .answers-heading {display:block; margin:20px 0 12px}
+.review-content .answers-heading span {display:block; font-size:12px; margin-top:4px}
+.record-option {border-radius:9px; background:#0a1323}
+.record-option.active {background:#123139; border-color:#3d8b84}
+.review-list {max-height:85vh}
+.bulk-controls {background:#0b1525}
+.process-preview-layout {grid-template-columns:200px minmax(0,1fr); gap:20px}
+.process-result-detail {display:grid; grid-template-columns:minmax(300px,.85fr) minmax(0,1.15fr); gap:0 22px; align-content:start}
+.process-result-detail>* {grid-column:1}
+.preview-heading {display:block; margin-bottom:16px}
+.preview-heading h3 {font-size:18px; margin-bottom:14px}
+.preview-heading .button {font-size:12px}
+.preview-data {gap:12px 20px}
+.preview-data dd {font-size:14px}
+.preview-score {font-size:13px; line-height:1.7}
+.process-answers {gap:5px; margin-top:8px}
+.process-answers li {padding:6px; font-size:12px; border-radius:5px; background:#0a1323}
+.processed-image-link {grid-column:2; grid-row:1/span 8; margin:0; align-self:start; border-radius:8px; overflow:hidden}
+.process-result-detail>.field-help:last-child {grid-column:2}
+.preview-decisions {font-size:12px; margin:8px 0 16px}
+.process-result-detail .callout {font-size:12px; margin:0 0 16px}
+.process-results {margin-top:28px}
+.table-scroll {border:1px solid var(--border); border-radius:10px}
+th {background:#0a1424; border-color:var(--border)}
+tbody tr:hover {background:#16243a}
+.grading-preview {background:#0a1525; padding:12px; gap:12px 18px}
+.grading-preview strong {color:var(--accent)}
+footer {text-align:center; padding-top:20px; margin-top:28px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

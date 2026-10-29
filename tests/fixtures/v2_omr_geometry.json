@@ -1,0 +1,1118 @@
+{
+  "15q_4a": {
+    "geometry": {
+      "profile": "OMR-A5-SHEET-2026.3",
+      "anchors_mm": {
+        "TL": [
+          10.0,
+          200.0
+        ],
+        "TR": [
+          138.0,
+          200.0
+        ],
+        "BL": [
+          10.0,
+          10.0
+        ],
+        "BR": [
+          138.0,
+          10.0
+        ]
+      },
+      "anchor_sizes_mm": {
+        "TL": 10.0,
+        "TR": 10.0,
+        "BL": 10.0,
+        "BR": 10.0
+      },
+      "anchor_kinds": {
+        "TL": "solid",
+        "TR": "frame",
+        "BL": "circle",
+        "BR": "ell"
+      },
+      "bubble_diameter_mm": 8.2,
+      "bubble_gap_mm": 4.6833333333333345,
+      "x_left_mm": [
+        26.9,
+        39.78333333333333,
+        52.666666666666664,
+        65.55
+      ],
+      "x_right_mm": [
+        88.15,
+        101.03333333333333,
+        113.91666666666667,
+        126.80000000000001
+      ],
+      "y_left_mm": [
+        148.81875,
+        133.45625,
+        118.09375,
+        102.73124999999999,
+        87.36874999999999,
+        72.00625,
+        56.64375,
+        41.28125
+      ],
+      "y_right_mm": [
+        148.81875,
+        133.45625,
+        118.09375,
+        102.73124999999999,
+        87.36874999999999,
+        72.00625,
+        56.64375
+      ],
+      "row_h_mm": 15.3625,
+      "questions_top_mm": 156.5,
+      "questions_bottom_mm": 33.6,
+      "left_col_x_mm": 15.5,
+      "right_col_x_mm": 76.75,
+      "col_w_mm": 55.75,
+      "col_gap_mm": 5.5,
+      "pad_x_mm": 15.5,
+      "pad_top_mm": 15.0,
+      "pad_bottom_mm": 11.0,
+      "header_h_mm": 26.0,
+      "footer_h_mm": 16.5,
+      "title_drop_mm": 9.5,
+      "header_gap_mm": 3.0,
+      "footer_gap_mm": 2.5,
+      "note_h_mm": 3.6,
+      "num_w_mm": 5.5,
+      "bubble_indent_mm": 1.8,
+      "content_left_mm": 15.5,
+      "content_w_mm": 117.0,
+      "compact": false,
+      "n_rows": 8,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "num_questions": 15,
+      "num_alternatives": 4,
+      "header_box_mm": [
+        15.5,
+        159.5,
+        117.0,
+        26.0
+      ],
+      "footer_box_mm": [
+        15.5,
+        14.6,
+        117.0,
+        16.5
+      ],
+      "nombre_box_mm": [
+        18.7,
+        176.83333333333334,
+        110.6,
+        7.366666666666666
+      ],
+      "colegio_box_mm": [
+        18.7,
+        168.16666666666666,
+        75.208,
+        7.366666666666666
+      ],
+      "grado_box_mm": [
+        98.332,
+        168.16666666666666,
+        30.968,
+        7.366666666666666
+      ],
+      "procedencia_box_mm": [
+        18.7,
+        159.5,
+        110.6,
+        7.366666666666666
+      ],
+      "metrics": {
+        "num_questions": 15,
+        "num_alternatives": 4,
+        "mid": 8,
+        "n_left": 8,
+        "n_right": 7,
+        "n_rows": 8,
+        "compact": false,
+        "pad_x": 15.5,
+        "pad_top": 15.0,
+        "pad_bottom": 11.0,
+        "header_h": 26.0,
+        "footer_h": 16.5,
+        "footer_gap": 2.5,
+        "note_h": 3.6,
+        "title_drop": 9.5,
+        "header_gap": 3.0,
+        "col_gap": 5.5,
+        "num_w": 5.5,
+        "bubble_indent": 1.8,
+        "right_pad": 1.6,
+        "questions_top": 156.5,
+        "questions_bottom": 33.6,
+        "questions_h": 122.9,
+        "row_h": 15.3625,
+        "content_left": 15.5,
+        "content_w": 117.0,
+        "col_w": 55.75,
+        "left_col_x": 15.5,
+        "right_col_x": 76.75,
+        "bubble_d": 8.2,
+        "bubble_gap": 4.6833333333333345
+      }
+    },
+    "canvas": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "x_left": [
+        135,
+        208,
+        280,
+        352
+      ],
+      "x_right": [
+        480,
+        552,
+        625,
+        697
+      ],
+      "y_rows_left": [
+        322.8,
+        407.7,
+        492.6,
+        577.5,
+        662.4,
+        747.3,
+        832.2,
+        917.1
+      ],
+      "y_rows_right": [
+        322.8,
+        407.7,
+        492.6,
+        577.5,
+        662.4,
+        747.3,
+        832.2
+      ],
+      "y_start_left": 322.8,
+      "y_start_right": 322.8,
+      "y_step": 84.9,
+      "bubble_radius": 23,
+      "method": "profile_OMR-A5-SHEET-2026.3",
+      "profile": "OMR-A5-SHEET-2026.3",
+      "anchor_kinds": {
+        "TL": "solid",
+        "TR": "frame",
+        "BL": "circle",
+        "BR": "ell"
+      },
+      "ocr_fields": {
+        "header": {
+          "x": 71,
+          "y": 120,
+          "w": 658,
+          "h": 144
+        },
+        "footer": {
+          "x": 71,
+          "y": 973,
+          "w": 658,
+          "h": 91
+        },
+        "nombre": {
+          "x": 89,
+          "y": 127,
+          "w": 622,
+          "h": 41
+        },
+        "colegio": {
+          "x": 89,
+          "y": 175,
+          "w": 423,
+          "h": 41
+        },
+        "grado": {
+          "x": 537,
+          "y": 175,
+          "w": 174,
+          "h": 41
+        },
+        "procedencia": {
+          "x": 89,
+          "y": 223,
+          "w": 622,
+          "h": 41
+        },
+        "numero_orden_box": {
+          "x": 89,
+          "y": 997,
+          "w": 118,
+          "h": 56
+        },
+        "hora_entrega_box": {
+          "x": 203,
+          "y": 997,
+          "w": 144,
+          "h": 56
+        }
+      },
+      "compact": false,
+      "num_questions": 15,
+      "num_alternatives": 4
+    }
+  },
+  "15q_5a": {
+    "geometry": {
+      "profile": "OMR-A5-SHEET-2026.3",
+      "anchors_mm": {
+        "TL": [
+          10.0,
+          200.0
+        ],
+        "TR": [
+          138.0,
+          200.0
+        ],
+        "BL": [
+          10.0,
+          10.0
+        ],
+        "BR": [
+          138.0,
+          10.0
+        ]
+      },
+      "anchor_sizes_mm": {
+        "TL": 10.0,
+        "TR": 10.0,
+        "BL": 10.0,
+        "BR": 10.0
+      },
+      "anchor_kinds": {
+        "TL": "solid",
+        "TR": "frame",
+        "BL": "circle",
+        "BR": "ell"
+      },
+      "bubble_diameter_mm": 8.2,
+      "bubble_gap_mm": 2.1250000000000018,
+      "x_left_mm": [
+        25.7,
+        36.025,
+        46.35,
+        56.675,
+        67.0
+      ],
+      "x_right_mm": [
+        86.0,
+        96.325,
+        106.65,
+        116.975,
+        127.30000000000001
+      ],
+      "y_left_mm": [
+        148.81875,
+        133.45625,
+        118.09375,
+        102.73124999999999,
+        87.36874999999999,
+        72.00625,
+        56.64375,
+        41.28125
+      ],
+      "y_right_mm": [
+        148.81875,
+        133.45625,
+        118.09375,
+        102.73124999999999,
+        87.36874999999999,
+        72.00625,
+        56.64375
+      ],
+      "row_h_mm": 15.3625,
+      "questions_top_mm": 156.5,
+      "questions_bottom_mm": 33.6,
+      "left_col_x_mm": 15.5,
+      "right_col_x_mm": 75.8,
+      "col_w_mm": 56.7,
+      "col_gap_mm": 3.6,
+      "pad_x_mm": 15.5,
+      "pad_top_mm": 15.0,
+      "pad_bottom_mm": 11.0,
+      "header_h_mm": 26.0,
+      "footer_h_mm": 16.5,
+      "title_drop_mm": 9.5,
+      "header_gap_mm": 3.0,
+      "footer_gap_mm": 2.5,
+      "note_h_mm": 3.6,
+      "num_w_mm": 4.8,
+      "bubble_indent_mm": 1.3,
+      "content_left_mm": 15.5,
+      "content_w_mm": 117.0,
+      "compact": false,
+      "n_rows": 8,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_questions": 15,
+      "num_alternatives": 5,
+      "header_box_mm": [
+        15.5,
+        159.5,
+        117.0,
+        26.0
+      ],
+      "footer_box_mm": [
+        15.5,
+        14.6,
+        117.0,
+        16.5
+      ],
+      "nombre_box_mm": [
+        18.7,
+        176.83333333333334,
+        110.6,
+        7.366666666666666
+      ],
+      "colegio_box_mm": [
+        18.7,
+        168.16666666666666,
+        75.208,
+        7.366666666666666
+      ],
+      "grado_box_mm": [
+        98.332,
+        168.16666666666666,
+        30.968,
+        7.366666666666666
+      ],
+      "procedencia_box_mm": [
+        18.7,
+        159.5,
+        110.6,
+        7.366666666666666
+      ],
+      "metrics": {
+        "num_questions": 15,
+        "num_alternatives": 5,
+        "mid": 8,
+        "n_left": 8,
+        "n_right": 7,
+        "n_rows": 8,
+        "compact": false,
+        "pad_x": 15.5,
+        "pad_top": 15.0,
+        "pad_bottom": 11.0,
+        "header_h": 26.0,
+        "footer_h": 16.5,
+        "footer_gap": 2.5,
+        "note_h": 3.6,
+        "title_drop": 9.5,
+        "header_gap": 3.0,
+        "col_gap": 3.6,
+        "num_w": 4.8,
+        "bubble_indent": 1.3,
+        "right_pad": 1.1,
+        "questions_top": 156.5,
+        "questions_bottom": 33.6,
+        "questions_h": 122.9,
+        "row_h": 15.3625,
+        "content_left": 15.5,
+        "content_w": 117.0,
+        "col_w": 56.7,
+        "left_col_x": 15.5,
+        "right_col_x": 75.8,
+        "bubble_d": 8.2,
+        "bubble_gap": 2.1250000000000018
+      }
+    },
+    "canvas": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "x_left": [
+        128,
+        186,
+        244,
+        303,
+        361
+      ],
+      "x_right": [
+        468,
+        526,
+        584,
+        642,
+        700
+      ],
+      "y_rows_left": [
+        322.8,
+        407.7,
+        492.6,
+        577.5,
+        662.4,
+        747.3,
+        832.2,
+        917.1
+      ],
+      "y_rows_right": [
+        322.8,
+        407.7,
+        492.6,
+        577.5,
+        662.4,
+        747.3,
+        832.2
+      ],
+      "y_start_left": 322.8,
+      "y_start_right": 322.8,
+      "y_step": 84.9,
+      "bubble_radius": 23,
+      "method": "profile_OMR-A5-SHEET-2026.3",
+      "profile": "OMR-A5-SHEET-2026.3",
+      "anchor_kinds": {
+        "TL": "solid",
+        "TR": "frame",
+        "BL": "circle",
+        "BR": "ell"
+      },
+      "ocr_fields": {
+        "header": {
+          "x": 71,
+          "y": 120,
+          "w": 658,
+          "h": 144
+        },
+        "footer": {
+          "x": 71,
+          "y": 973,
+          "w": 658,
+          "h": 91
+        },
+        "nombre": {
+          "x": 89,
+          "y": 127,
+          "w": 622,
+          "h": 41
+        },
+        "colegio": {
+          "x": 89,
+          "y": 175,
+          "w": 423,
+          "h": 41
+        },
+        "grado": {
+          "x": 537,
+          "y": 175,
+          "w": 174,
+          "h": 41
+        },
+        "procedencia": {
+          "x": 89,
+          "y": 223,
+          "w": 622,
+          "h": 41
+        },
+        "numero_orden_box": {
+          "x": 89,
+          "y": 997,
+          "w": 118,
+          "h": 56
+        },
+        "hora_entrega_box": {
+          "x": 203,
+          "y": 997,
+          "w": 144,
+          "h": 56
+        }
+      },
+      "compact": false,
+      "num_questions": 15,
+      "num_alternatives": 5
+    }
+  },
+  "20q_4a": {
+    "geometry": {
+      "profile": "OMR-A5-SHEET-2026.3",
+      "anchors_mm": {
+        "TL": [
+          10.0,
+          200.0
+        ],
+        "TR": [
+          138.0,
+          200.0
+        ],
+        "BL": [
+          10.0,
+          10.0
+        ],
+        "BR": [
+          138.0,
+          10.0
+        ]
+      },
+      "anchor_sizes_mm": {
+        "TL": 10.0,
+        "TR": 10.0,
+        "BL": 10.0,
+        "BR": 10.0
+      },
+      "anchor_kinds": {
+        "TL": "solid",
+        "TR": "frame",
+        "BL": "circle",
+        "BR": "ell"
+      },
+      "bubble_diameter_mm": 7.476000000000001,
+      "bubble_gap_mm": 5.648666666666666,
+      "x_left_mm": [
+        26.538,
+        39.66266666666667,
+        52.787333333333336,
+        65.91199999999999
+      ],
+      "x_right_mm": [
+        87.788,
+        100.91266666666667,
+        114.03733333333332,
+        127.16199999999999
+      ],
+      "y_left_mm": [
+        155.325,
+        141.975,
+        128.625,
+        115.275,
+        101.92500000000001,
+        88.575,
+        75.22500000000001,
+        61.875,
+        48.525000000000006,
+        35.175
+      ],
+      "y_right_mm": [
+        155.325,
+        141.975,
+        128.625,
+        115.275,
+        101.92500000000001,
+        88.575,
+        75.22500000000001,
+        61.875,
+        48.525000000000006,
+        35.175
+      ],
+      "row_h_mm": 13.35,
+      "questions_top_mm": 162.0,
+      "questions_bottom_mm": 28.500000000000004,
+      "left_col_x_mm": 15.5,
+      "right_col_x_mm": 76.75,
+      "col_w_mm": 55.75,
+      "col_gap_mm": 5.5,
+      "pad_x_mm": 15.5,
+      "pad_top_mm": 15.0,
+      "pad_bottom_mm": 9.4,
+      "header_h_mm": 22.8,
+      "footer_h_mm": 14.2,
+      "title_drop_mm": 8.2,
+      "header_gap_mm": 2.0,
+      "footer_gap_mm": 1.8,
+      "note_h_mm": 3.1,
+      "num_w_mm": 5.5,
+      "bubble_indent_mm": 1.8,
+      "content_left_mm": 15.5,
+      "content_w_mm": 117.0,
+      "compact": true,
+      "n_rows": 10,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "num_questions": 20,
+      "num_alternatives": 4,
+      "header_box_mm": [
+        15.5,
+        164.0,
+        117.0,
+        22.8
+      ],
+      "footer_box_mm": [
+        15.5,
+        12.5,
+        117.0,
+        14.2
+      ],
+      "nombre_box_mm": [
+        18.7,
+        179.20000000000002,
+        110.6,
+        6.46
+      ],
+      "colegio_box_mm": [
+        18.7,
+        171.60000000000002,
+        75.208,
+        6.46
+      ],
+      "grado_box_mm": [
+        98.332,
+        171.60000000000002,
+        30.968,
+        6.46
+      ],
+      "procedencia_box_mm": [
+        18.7,
+        164.0,
+        110.6,
+        6.46
+      ],
+      "metrics": {
+        "num_questions": 20,
+        "num_alternatives": 4,
+        "mid": 10,
+        "n_left": 10,
+        "n_right": 10,
+        "n_rows": 10,
+        "compact": true,
+        "pad_x": 15.5,
+        "pad_top": 15.0,
+        "pad_bottom": 9.4,
+        "header_h": 22.8,
+        "footer_h": 14.2,
+        "footer_gap": 1.8,
+        "note_h": 3.1,
+        "title_drop": 8.2,
+        "header_gap": 2.0,
+        "col_gap": 5.5,
+        "num_w": 5.5,
+        "bubble_indent": 1.8,
+        "right_pad": 1.6,
+        "questions_top": 162.0,
+        "questions_bottom": 28.500000000000004,
+        "questions_h": 133.5,
+        "row_h": 13.35,
+        "content_left": 15.5,
+        "content_w": 117.0,
+        "col_w": 55.75,
+        "left_col_x": 15.5,
+        "right_col_x": 76.75,
+        "bubble_d": 7.476000000000001,
+        "bubble_gap": 5.648666666666666
+      }
+    },
+    "canvas": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "x_left": [
+        133,
+        207,
+        281,
+        355
+      ],
+      "x_right": [
+        478,
+        551,
+        625,
+        699
+      ],
+      "y_rows_left": [
+        286.9,
+        360.7,
+        434.4,
+        508.2,
+        582.0,
+        655.8,
+        729.5,
+        803.3,
+        877.1,
+        950.9
+      ],
+      "y_rows_right": [
+        286.9,
+        360.7,
+        434.4,
+        508.2,
+        582.0,
+        655.8,
+        729.5,
+        803.3,
+        877.1,
+        950.9
+      ],
+      "y_start_left": 286.9,
+      "y_start_right": 286.9,
+      "y_step": 73.8,
+      "bubble_radius": 21,
+      "method": "profile_OMR-A5-SHEET-2026.3",
+      "profile": "OMR-A5-SHEET-2026.3",
+      "anchor_kinds": {
+        "TL": "solid",
+        "TR": "frame",
+        "BL": "circle",
+        "BR": "ell"
+      },
+      "ocr_fields": {
+        "header": {
+          "x": 71,
+          "y": 113,
+          "w": 658,
+          "h": 126
+        },
+        "footer": {
+          "x": 71,
+          "y": 998,
+          "w": 658,
+          "h": 78
+        },
+        "nombre": {
+          "x": 89,
+          "y": 119,
+          "w": 622,
+          "h": 36
+        },
+        "colegio": {
+          "x": 89,
+          "y": 161,
+          "w": 423,
+          "h": 36
+        },
+        "grado": {
+          "x": 537,
+          "y": 161,
+          "w": 174,
+          "h": 36
+        },
+        "procedencia": {
+          "x": 89,
+          "y": 203,
+          "w": 622,
+          "h": 36
+        },
+        "numero_orden_box": {
+          "x": 89,
+          "y": 1016,
+          "w": 118,
+          "h": 49
+        },
+        "hora_entrega_box": {
+          "x": 203,
+          "y": 1016,
+          "w": 144,
+          "h": 49
+        }
+      },
+      "compact": true,
+      "num_questions": 20,
+      "num_alternatives": 4
+    }
+  },
+  "20q_5a": {
+    "geometry": {
+      "profile": "OMR-A5-SHEET-2026.3",
+      "anchors_mm": {
+        "TL": [
+          10.0,
+          200.0
+        ],
+        "TR": [
+          138.0,
+          200.0
+        ],
+        "BL": [
+          10.0,
+          10.0
+        ],
+        "BR": [
+          138.0,
+          10.0
+        ]
+      },
+      "anchor_sizes_mm": {
+        "TL": 10.0,
+        "TR": 10.0,
+        "BL": 10.0,
+        "BR": 10.0
+      },
+      "anchor_kinds": {
+        "TL": "solid",
+        "TR": "frame",
+        "BL": "circle",
+        "BR": "ell"
+      },
+      "bubble_diameter_mm": 7.476000000000001,
+      "bubble_gap_mm": 3.030000000000001,
+      "x_left_mm": [
+        25.338,
+        35.844,
+        46.35000000000001,
+        56.85600000000001,
+        67.36200000000001
+      ],
+      "x_right_mm": [
+        85.638,
+        96.144,
+        106.65,
+        117.156,
+        127.662
+      ],
+      "y_left_mm": [
+        155.325,
+        141.975,
+        128.625,
+        115.275,
+        101.92500000000001,
+        88.575,
+        75.22500000000001,
+        61.875,
+        48.525000000000006,
+        35.175
+      ],
+      "y_right_mm": [
+        155.325,
+        141.975,
+        128.625,
+        115.275,
+        101.92500000000001,
+        88.575,
+        75.22500000000001,
+        61.875,
+        48.525000000000006,
+        35.175
+      ],
+      "row_h_mm": 13.35,
+      "questions_top_mm": 162.0,
+      "questions_bottom_mm": 28.500000000000004,
+      "left_col_x_mm": 15.5,
+      "right_col_x_mm": 75.8,
+      "col_w_mm": 56.7,
+      "col_gap_mm": 3.6,
+      "pad_x_mm": 15.5,
+      "pad_top_mm": 15.0,
+      "pad_bottom_mm": 9.4,
+      "header_h_mm": 22.8,
+      "footer_h_mm": 14.2,
+      "title_drop_mm": 8.2,
+      "header_gap_mm": 2.0,
+      "footer_gap_mm": 1.8,
+      "note_h_mm": 3.1,
+      "num_w_mm": 4.8,
+      "bubble_indent_mm": 1.3,
+      "content_left_mm": 15.5,
+      "content_w_mm": 117.0,
+      "compact": true,
+      "n_rows": 10,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_questions": 20,
+      "num_alternatives": 5,
+      "header_box_mm": [
+        15.5,
+        164.0,
+        117.0,
+        22.8
+      ],
+      "footer_box_mm": [
+        15.5,
+        12.5,
+        117.0,
+        14.2
+      ],
+      "nombre_box_mm": [
+        18.7,
+        179.20000000000002,
+        110.6,
+        6.46
+      ],
+      "colegio_box_mm": [
+        18.7,
+        171.60000000000002,
+        75.208,
+        6.46
+      ],
+      "grado_box_mm": [
+        98.332,
+        171.60000000000002,
+        30.968,
+        6.46
+      ],
+      "procedencia_box_mm": [
+        18.7,
+        164.0,
+        110.6,
+        6.46
+      ],
+      "metrics": {
+        "num_questions": 20,
+        "num_alternatives": 5,
+        "mid": 10,
+        "n_left": 10,
+        "n_right": 10,
+        "n_rows": 10,
+        "compact": true,
+        "pad_x": 15.5,
+        "pad_top": 15.0,
+        "pad_bottom": 9.4,
+        "header_h": 22.8,
+        "footer_h": 14.2,
+        "footer_gap": 1.8,
+        "note_h": 3.1,
+        "title_drop": 8.2,
+        "header_gap": 2.0,
+        "col_gap": 3.6,
+        "num_w": 4.8,
+        "bubble_indent": 1.3,
+        "right_pad": 1.1,
+        "questions_top": 162.0,
+        "questions_bottom": 28.500000000000004,
+        "questions_h": 133.5,
+        "row_h": 13.35,
+        "content_left": 15.5,
+        "content_w": 117.0,
+        "col_w": 56.7,
+        "left_col_x": 15.5,
+        "right_col_x": 75.8,
+        "bubble_d": 7.476000000000001,
+        "bubble_gap": 3.030000000000001
+      }
+    },
+    "canvas": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "x_left": [
+        126,
+        185,
+        244,
+        304,
+        363
+      ],
+      "x_right": [
+        465,
+        525,
+        584,
+        643,
+        702
+      ],
+      "y_rows_left": [
+        286.9,
+        360.7,
+        434.4,
+        508.2,
+        582.0,
+        655.8,
+        729.5,
+        803.3,
+        877.1,
+        950.9
+      ],
+      "y_rows_right": [
+        286.9,
+        360.7,
+        434.4,
+        508.2,
+        582.0,
+        655.8,
+        729.5,
+        803.3,
+        877.1,
+        950.9
+      ],
+      "y_start_left": 286.9,
+      "y_start_right": 286.9,
+      "y_step": 73.8,
+      "bubble_radius": 21,
+      "method": "profile_OMR-A5-SHEET-2026.3",
+      "profile": "OMR-A5-SHEET-2026.3",
+      "anchor_kinds": {
+        "TL": "solid",
+        "TR": "frame",
+        "BL": "circle",
+        "BR": "ell"
+      },
+      "ocr_fields": {
+        "header": {
+          "x": 71,
+          "y": 113,
+          "w": 658,
+          "h": 126
+        },
+        "footer": {
+          "x": 71,
+          "y": 998,
+          "w": 658,
+          "h": 78
+        },
+        "nombre": {
+          "x": 89,
+          "y": 119,
+          "w": 622,
+          "h": 36
+        },
+        "colegio": {
+          "x": 89,
+          "y": 161,
+          "w": 423,
+          "h": 36
+        },
+        "grado": {
+          "x": 537,
+          "y": 161,
+          "w": 174,
+          "h": 36
+        },
+        "procedencia": {
+          "x": 89,
+          "y": 203,
+          "w": 622,
+          "h": 36
+        },
+        "numero_orden_box": {
+          "x": 89,
+          "y": 1016,
+          "w": 118,
+          "h": 49
+        },
+        "hora_entrega_box": {
+          "x": 203,
+          "y": 1016,
+          "w": 144,
+          "h": 49
+        }
+      },
+      "compact": true,
+      "num_questions": 20,
+      "num_alternatives": 5
+    }
+  }
+}

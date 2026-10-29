@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070b17"><link rel="icon" href="data:,">
+<title>OMR 2.5 · Centro de calificación</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='omr25.css', v='253') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='pro-ui.css', v='253') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='desktop25.css', v='253') }}">
+<script defer src="{{ url_for('static', filename='omr25.js', v='253') }}"></script>
+</head>
+<body>
+<header class="app-header">
+  <a href="/" class="brand" aria-label="OMR 2.5, inicio"><span class="brand-mark">OMR</span><span><strong>Lectora OMR <small>2.5.3 PRO</small></strong><span class="brand-caption">Centro de calificación</span></span></a>
+  <div class="header-tools"><span class="local-badge"><i></i> Datos en este equipo</span><label class="course-label">Curso<select id="course"><option value="Matematica">Matemática</option><option value="Comunicacion">Comunicación</option></select></label></div>
+</header>
+<main>
+<header class="app-hero">
+            <div class="hero-copy">
+                <div class="hero-eyebrow">
+                    <span class="live-status"><i></i>Lectura por sectores</span>
+                    <span class="network-badge">Red local</span>
+                </div>
+                <h1>LECTORA <span>OMR</span></h1>
+                <p>Calificación por marcas ópticas. Cargue lotes, revise cada lectura y genere su Excel por grado.</p>
+                <div class="hero-metrics" aria-label="Características principales">
+                    <span><strong>01</strong> 37 caracteres + colegio</span>
+                    <span><strong>02</strong> Fotos, ZIP y carpetas</span>
+                    <span><strong>03</strong> 15 respuestas · 6 grados</span>
+                </div>
+            <div class="hero-actions"><a id="sheet-link" class="button" href="/sheet?curso=Matematica" target="_blank" rel="noopener">Ver y descargar ficha A4 ↗</a><span>Guías por sección · edición 2.5.3</span></div></div>
+            <div class="scanner-stage" aria-hidden="true">
+                <div class="scanner-orbit orbit-one"></div>
+                <div class="scanner-orbit orbit-two"></div>
+                <div class="scanner-machine">
+                    <div class="scanner-top">
+                        <span class="scanner-light"></span>
+                        <span class="scanner-light"></span>
+                        <span class="scanner-light active"></span>
+                    </div>
+                    <div class="scanner-slot"></div>
+                    <div class="scan-sheet">
+                        <div class="sheet-heading"></div>
+                        <div class="sheet-copy"></div>
+                        <div class="bubble-field"></div>
+                        <div class="scan-beam"></div>
+                    </div>
+                    <div class="scanner-front"><span>OMR</span><i></i></div>
+                </div>
+                <div class="scanner-shadow"></div>
+            </div>
+        </header>
+<div class="summary" aria-label="Estado del curso"><div><span id="count-total">0</span><p>fichas cargadas</p></div><div><span id="count-pending">0</span><p>por revisar</p></div><div><span id="count-confirmed">0</span><p>confirmadas</p></div><div><span id="count-keys">0/6</span><p>grados con clave</p></div></div>
+<nav class="tabs" aria-label="Secciones"><button class="active" data-tab="process"><span class="tab-number">01</span>Procesar</button><button data-tab="review"><span class="tab-number">02</span>Revisar <span id="review-badge">0</span></button><button data-tab="results"><span class="tab-number">03</span>Resultados</button><button data-tab="keys"><span class="tab-number">04</span>Claves</button><button data-tab="settings"><span class="tab-number">05</span>Configuración</button></nav>
+<div id="notice" role="status" aria-live="polite" hidden></div>
+<section id="tab-process" class="tab-panel">
+  <div class="section-heading"><div><h2>Cargar fichas</h2><p>Fotografías individuales, archivos ZIP y carpetas completas con subcarpetas.</p></div><span class="format-chip">37 caracteres · colegio 12 · grados 1–6 · 15 preguntas</span></div>
+  <div id="key-warning" class="callout warning" hidden>Guarde primero las claves de los grados que va a calificar. <button class="text-button" data-goto="keys">Ir a claves</button></div>
+  <div class="upload-layout"><div class="upload-main"><label id="dropzone" class="dropzone" for="files"><span class="upload-symbol" aria-hidden="true">↑</span><strong>Seleccione o arrastre sus fotografías</strong><span>JPEG, PNG, WebP, TIFF o ZIP · lectura en lotes</span><span class="button secondary">Elegir archivos</span><input id="files" type="file" accept="image/jpeg,image/png,image/webp,image/tiff,.zip" multiple></label><div class="source-actions"><label class="button secondary file-button">Subir ZIP<input id="zip-files" type="file" accept=".zip,application/zip" multiple></label><label class="button secondary file-button">Elegir carpeta completa<input id="folder-files" type="file" webkitdirectory directory multiple></label><button id="clear-files" type="button" class="text-button" disabled>Vaciar selección</button></div><p class="field-help">La carpeta incluye sus subcarpetas. Se omiten archivos incompatibles. Cada ZIP admite hasta 200 fotos / 180 MB; cada imagen, 35 MB.</p><p id="file-count" class="muted">Ningún archivo seleccionado.</p><details id="queue-panel" class="queue-panel" hidden><summary id="queue-summary">Archivos seleccionados</summary><ol id="queue-files"></ol></details><div class="action-row"><button id="process" class="button" disabled>Leer fichas</button><button class="text-button" data-goto="review">Ver fichas pendientes</button></div><div id="processing-state" hidden><progress id="upload-progress" value="0" max="1"></progress><p id="progress-text" role="status"></p></div><div id="upload-errors" class="callout warning" hidden></div></div><aside class="capture-guide"><span class="eyebrow">ANTES DE CAPTURAR</span><h3>Una fotografía clara evita correcciones.</h3><ol><li>Use la ficha <strong>A4 horizontal de esta versión</strong>, impresa al 100%.</li><li>Incluya las cuatro esquinas y las marcas de cada sección; mantenga la hoja plana.</li><li>Evite sombras, reflejos y desenfoque. Rellene sobre la letra tenue. Las líneas separan grupos de cinco caracteres.</li></ol><p>En nombres y colegio, una columna sin pintar representa un espacio; tres vacías seguidas indican el final. El colegio admite hasta 12 letras, Ñ o espacios. En la revisión puede escribir el nombre completo, incluidos números. El orden y la hora se transcriben manualmente. Use únicamente fichas A4 de esta versión.</p></aside></div>
+<section id="process-results" class="process-results" aria-labelledby="process-results-title" hidden>
+  <div class="section-heading"><div><h2 id="process-results-title" tabindex="-1">Fichas procesadas</h2><p>Compruebe aquí la imagen y los datos leídos. Los resultados se exportan después de confirmar.</p></div><span id="process-results-count" class="muted"></span></div>
+  <div class="process-preview-layout"><div id="process-results-list" class="process-results-list" aria-label="Seleccionar ficha procesada"></div><article id="process-result-detail" class="process-result-detail"></article></div>
+</section>
+</section>
+<section id="tab-review" class="tab-panel" hidden>
+  <div class="section-heading"><div><h2>Revisar y confirmar</h2><p>Verifique los datos junto a la ficha antes de incluirlos en los reportes.</p></div><label class="inline-label">Mostrar<select id="review-filter"><option value="pending">Pendientes</option><option value="all">Todas las fichas</option></select></label></div>
+  <form id="bulk-form" class="bulk-controls" hidden><label class="check-row"><input id="bulk-reviewed" type="checkbox" required><span>He revisado los datos y las respuestas de las lecturas claras del lote.</span></label><button class="button secondary" id="bulk-confirm" type="submit">Confirmar lecturas claras</button><span class="muted">Las lecturas dudosas se revisan una a una.</span></form>
+  <div id="review-empty" class="empty-state"><h3>No hay fichas pendientes.</h3><p>Las fichas que cargue aparecerán aquí para su revisión.</p><button class="button secondary" data-goto="process">Cargar fichas</button></div>
+  <div id="review-workspace" class="review-layout" hidden><aside><div id="review-list" class="review-list" aria-label="Fichas para revisar"></div></aside><div class="review-content"><div class="review-image"><div class="image-toolbar"><strong id="review-filename"></strong><div><button id="reprocess-record" class="text-button" type="button">Volver a leer por zonas</button><button id="toggle-original" class="text-button">Ver original</button><a id="open-image" target="_blank" rel="noopener">Ampliar imagen ↗</a></div></div><a id="image-zoom" target="_blank" rel="noopener"><img id="review-image" alt="Ficha OMR para revisar"></a></div><form id="review-form"><p id="review-tracking" class="field-help" hidden></p><div id="review-issues" class="callout warning" hidden></div><div id="confirmed-state" class="callout success" hidden>Ficha confirmada e incluida en los reportes. Puede corregirla y volver a confirmar.</div><div class="form-grid"><label class="wide">Apellidos y nombres<input id="review-name" maxlength="120" required autocomplete="off"></label><label>Colegio<input id="review-school" maxlength="120" required autocomplete="off"><span class="field-help">Puede completar la abreviatura con el nombre real y números del colegio.</span></label><label>Grado<select id="review-grade" required><option value="">Seleccione un grado</option><option value="1">1.º grado</option><option value="2">2.º grado</option><option value="3">3.º grado</option><option value="4">4.º grado</option><option value="5">5.º grado</option><option value="6">6.º grado</option></select></label><label>Número de orden <span class="optional">opcional, manual</span><input id="review-order" inputmode="numeric" pattern="[0-9]{1,6}" maxlength="6"></label><label>Hora de entrega <span class="optional">opcional, manual</span><input id="review-time" type="time"></label></div><div class="answers-heading"><h3>Respuestas leídas</h3><span>A–E · — blanco · X doble, cuenta como mala</span></div><div id="review-answers" class="answer-grid"></div><div id="grading-preview" class="grading-preview"></div><label class="check-row"><input id="reviewed" type="checkbox" required><span>He verificado el nombre, el colegio, el grado y las 15 respuestas con la imagen.</span></label><div class="action-row"><button id="confirm-record" class="button" type="submit">Confirmar y guardar resultado</button><a id="download-image" class="button secondary">Descargar imagen</a></div></form></div></div>
+</section>
+<section id="tab-results" class="tab-panel" hidden>
+  <div class="section-heading"><div><h2>Resultados confirmados</h2><p>El Excel utiliza su formato de referencia, con una hoja independiente por grado.</p></div><div class="action-row"><button id="export-excel" class="button" disabled>Descargar Excel por grados</button><button id="export-pdf" class="button secondary" disabled>PDF de fichas</button></div></div>
+  <div class="table-tools"><label class="inline-label">Grado<select id="results-grade"><option value="">Todos los grados</option><option value="1">1.º</option><option value="2">2.º</option><option value="3">3.º</option><option value="4">4.º</option><option value="5">5.º</option><option value="6">6.º</option></select></label><span id="results-count" class="muted"></span></div>
+  <div class="table-scroll"><table><thead><tr><th>Alumno</th><th>Colegio</th><th>Grado</th><th>Buenas</th><th>Malas</th><th>Blancos</th><th>Puntaje</th><th>Orden</th><th>Hora</th><th>Acciones</th></tr></thead><tbody id="results-body"></tbody></table></div><div id="results-empty" class="empty-state"><h3>Los resultados aparecerán al confirmar fichas.</h3><p>Las lecturas pendientes quedan fuera de los reportes.</p></div>
+</section>
+<section id="tab-keys" class="tab-panel" hidden>
+  <div class="section-heading"><div><h2>Claves por grado</h2><p>Una clave de 15 respuestas para cada grado y curso.</p></div><label class="inline-label">Grado<select id="key-grade"><option value="1">1.º grado</option><option value="2">2.º grado</option><option value="3">3.º grado</option><option value="4">4.º grado</option><option value="5">5.º grado</option><option value="6">6.º grado</option></select></label></div>
+  <div id="key-status" class="key-status"></div><form id="key-form"><label class="paste-key">Pegar una clave completa<input id="paste-key" placeholder="Ejemplo: A B C D E A B C D E A B C D E" autocomplete="off"><span class="muted">Puede separar las letras con espacios o comas.</span></label><div id="key-answers" class="answer-grid"></div><div class="action-row"><button type="submit" class="button">Guardar clave de este grado</button><span class="muted">Al cambiar una clave, las fichas de ese grado vuelven a revisión.</span></div></form>
+</section>
+<section id="tab-settings" class="tab-panel" hidden>
+  <div class="section-heading"><div><h2>Configuración de la ficha</h2><p>La posición de las burbujas y guías permanece fija.</p></div></div>
+  <form id="settings-form"><div class="form-grid settings-grid"><label class="wide">Nombre del concurso o institución<input id="branding-title" maxlength="80"></label><label>Puntos por respuesta buena<input id="score-correct" type="number" step="any" min="-10000" max="10000" required></label><label>Puntos por respuesta mala<input id="score-incorrect" type="number" step="any" min="-10000" max="10000" required></label><label>Puntos por respuesta en blanco<input id="score-blank" type="number" step="any" min="-10000" max="10000" required></label></div><div class="action-row"><button class="button" type="submit">Guardar configuración</button><span class="muted">Cambiar los puntos devuelve las fichas a revisión.</span></div></form>
+  <div class="logo-section"><h3>Logos de la ficha · proporción 30:9</h3><p class="muted">Se conserva la imagen completa, centrada sobre fondo blanco.</p><div class="logo-grid"><div><h4>Logo izquierdo</h4><div id="logo-left-preview" class="logo-preview">Sin logo</div><div class="action-row"><label class="button secondary file-button">Elegir imagen<input type="file" accept="image/png,image/jpeg,image/webp" id="logo-left"></label><button class="text-button" data-remove-logo="left">Quitar</button></div></div><div><h4>Logo derecho</h4><div id="logo-right-preview" class="logo-preview">Sin logo</div><div class="action-row"><label class="button secondary file-button">Elegir imagen<input type="file" accept="image/png,image/jpeg,image/webp" id="logo-right"></label><button class="text-button" data-remove-logo="right">Quitar</button></div></div></div></div>
+</section>
+<footer>OMR 2.5 · Lectura por marcas ópticas · A4 horizontal · Los datos permanecen en este equipo.</footer>
+</main>
+</body></html>
